@@ -1,4 +1,4 @@
--- which film is providing the highest revenue
+-- which film is providing the highest revenue (3nf query)
 select f.title, sum(p.amount) as revenue from payment as p
 inner join rental as r on p.rental_id = r.rental_id
 inner join inventory as i on r.inventory_id = i.inventory_id 
@@ -6,7 +6,7 @@ inner join film as f on i.film_id = f.film_id
 group by f.title
 order by sum(p.amount) DESC;
 
--- which city is providing the highest revenue
+-- which city is providing the highest revenue (3nf query)
 select c.city, sum(p.amount) as revenue from payment as p
 inner join rental as r on p.rental_id = r.rental_id
 inner join inventory as i on r.inventory_id = i.inventory_id 
