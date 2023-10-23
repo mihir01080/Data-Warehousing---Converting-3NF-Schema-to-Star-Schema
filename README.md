@@ -37,4 +37,4 @@ Populate the "factSales" table with data by executing the SQL statement for sale
 Once the Star Schema is set up, you can use it for OLAP and data analysis, including generating reports and insights from the transformed data.
 Contributors:
 
-[Your Name]
+[Mihir Patel]
